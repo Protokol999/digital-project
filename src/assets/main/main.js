@@ -1,0 +1,10 @@
+export { default as house } from './Frame 13.png';
+export { default as photocontact } from './image 12.png';
+export { default as photo2 } from './image 15.png';
+export { default as photo3 } from './image 16.png';
+export { default as photo4 } from './image 17.png';
+export { default as photo5 } from './image 18.png';
+export { default as leftb } from './leftb.png';
+export { default as leftt } from './leftt.png';
+export { default as photo1 } from './Rectangle 12.png';
+export { default as right } from './right.png';

@@ -1,0 +1,10 @@
+export { default as foto1 } from './Rectangle 22.png';
+export { default as foto2 } from './Rectangle 23.png';
+export { default as foto3 } from './Rectangle 24.png';
+export { default as foto4 } from './Rectangle 25.png';
+export { default as foto5 } from './Rectangle 26.png';
+export { default as foto7 } from './Rectangle 28.png';
+export { default as foto8 } from './Rectangle 29.png';
+export { default as foto9 } from './Rectangle 30.png';
+export { default as foto10 } from './Rectangle 31.png';
+export { default as foto6 } from './Rectangle 32.png';
