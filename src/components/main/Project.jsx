@@ -36,6 +36,7 @@ export const Project = () => {
               src={photo1}
               alt='photo1'
               sx={{
+                width: '100%',
                 height: '100%',
                 objectFit: 'cover'
               }}
@@ -55,9 +56,9 @@ export const Project = () => {
             <Stack
               sx={{
                 position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
+                top: 40,
+                left: 60,
+                width: { sx: '85%', md: '100%' },
                 height: '100%',
                 color: 'white'
               }}
@@ -74,7 +75,23 @@ export const Project = () => {
                 component={Link}
                 to='../sample-project'
                 variant='text'
-                sx={{ color: 'white' }}
+                sx={{
+                  width: '222px',
+                  mt: '30px',
+
+                  color: 'rgba(255, 255, 255, 1)',
+                  fontWeight: '200',
+                  fontSize: '16px',
+                  textTransform: 'uppercase',
+                  padding: '20px',
+                  boxShadow: 'none',
+                  '&:hover': {
+                    background: 'rgba(255,255,255,1)',
+                    color: 'rgba(51,51,51,1)',
+                    boxShadow: 'none',
+                    transition: '0.5s ease'
+                  }
+                }}
                 endIcon={<EastIcon />}
               >
                 View More

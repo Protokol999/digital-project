@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 export const Contacts = () => {
   return (
     <Box sx={{ px: { xs: 2, sm: 4, md: 7.5 }, mb: { xs: 10, md: 20 } }}>
-      {/* Заголовок */}
       <Stack direction='column' spacing={2} sx={{ mb: { xs: 4, md: '61px' } }}>
         <Typography
           sx={{
@@ -27,14 +26,12 @@ export const Contacts = () => {
         </Typography>
       </Stack>
 
-      {/* Контент */}
       <Stack
         direction={{ xs: 'column', md: 'row' }}
         spacing={{ xs: 4, md: 8 }}
         alignItems='flex-start'
       >
-        {/* Левая часть */}
-        <Stack direction='column' spacing={1.5} flex={1}>
+        <Stack direction='column' spacing={3}>
           <Typography variant='body1' fontSize={{ xs: 16, md: 18 }}>
             <strong>Company Name</strong>
           </Typography>
@@ -55,7 +52,7 @@ export const Contacts = () => {
             variant='contained'
             sx={{
               mt: 3,
-              alignSelf: { xs: 'center', md: 'flex-start' }, // центр на мобилке, слева на десктопе
+              alignSelf: { xs: 'center', md: 'flex-start' },
               background: 'rgba(51,51,51,1)',
               color: 'rgba(255,255,255,1)',
               fontWeight: 200,

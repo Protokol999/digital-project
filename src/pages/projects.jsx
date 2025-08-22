@@ -91,7 +91,7 @@ export const Projects = () => {
                     }
                   }}
                   endIcon={<EastIcon />}
-                  variant='contained'
+                  variant='text'
                 >
                   Viev More
                 </Button>

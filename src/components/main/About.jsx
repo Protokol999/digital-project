@@ -1,6 +1,7 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Box, Button, Stack, Typography } from '@mui/material';
 import { leftb, leftt, right } from '../../assets/main/main';
+import { Link } from 'react-router-dom';
 
 export const About = () => {
   return (
@@ -90,7 +91,24 @@ export const About = () => {
           </Typography>
 
           <Button
-            sx={{ color: 'rgba(0,0,0,1)' }}
+            component={Link}
+            to='/gallery'
+            sx={{
+              mt: '30px',
+              background: 'rgba(255,255,255,1)',
+              color: 'rgba(51, 51, 51, 1)',
+              fontWeight: '200',
+              fontSize: '16px',
+              textTransform: 'uppercase',
+              padding: '20px',
+              boxShadow: 'none',
+              '&:hover': {
+                background: 'rgba(51,51,51,1)',
+                color: 'rgba(255,255,255,1)',
+                boxShadow: 'none',
+                transition: '0.4s ease'
+              }
+            }}
             variant='text'
             endIcon={<ArrowForwardIcon />}
           >

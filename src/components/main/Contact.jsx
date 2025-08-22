@@ -31,7 +31,7 @@ export const Contact = () => {
 
   const handleChange = e => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-    setErrors(prev => ({ ...prev, [e.target.name]: '' })); // сброс ошибки при изменении
+    setErrors(prev => ({ ...prev, [e.target.name]: '' }));
   };
 
   const validate = () => {
@@ -115,6 +115,7 @@ export const Contact = () => {
         <form onSubmit={handleSubmit} noValidate>
           <TextField
             fullWidth
+            variant='standard'
             label='Имя'
             name='name'
             value={formData.name}
@@ -126,6 +127,7 @@ export const Contact = () => {
           />
           <TextField
             fullWidth
+            variant='standard'
             label='Фамилия'
             name='surname'
             value={formData.surname}
@@ -137,6 +139,7 @@ export const Contact = () => {
           />
           <TextField
             fullWidth
+            variant='standard'
             label='Email'
             name='email'
             type='email'
@@ -152,6 +155,7 @@ export const Contact = () => {
             label='Number'
             name='phone'
             type='tel'
+            variant='standard'
             value={formData.phone}
             onChange={handleChange}
             margin='normal'
@@ -174,6 +178,7 @@ export const Contact = () => {
             multiline
             rows={4}
             required
+            variant='standard'
             error={!!errors.message}
             helperText={errors.message}
           />
@@ -208,7 +213,19 @@ export const Contact = () => {
             <Alert severity={alert.severity}>{alert.message}</Alert>
           )}
         </Stack>
-        <Box component='img' src={photocontact} alt='Contact' />
+        <Box
+          component='img'
+          sx={{
+            borderRadius: '30px',
+            boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.1)',
+            '&:hover': {
+              transform: 'scale(1.05)',
+              transition: '0.6s ease'
+            }
+          }}
+          src={photocontact}
+          alt='Contact'
+        />
       </Stack>
     </Box>
   );
